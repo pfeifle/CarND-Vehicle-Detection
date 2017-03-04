@@ -13,13 +13,13 @@ The goals / steps of this project are the following:
 * Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
-[image1]: ./output_images/car_not_car.JPG
-[image2]: ./output_images/image2_1.JPG
-[image3]: ./output_images/image2_2.JPG
-[image4]: ./output_images/image2_3.JPG
-[image5]: ./output_images/image3_1.JPG
-[image6]: ./output_images/image3_2.JPG
-[image7]: ./output_images/image3_3.JPG
+[image1]: ./output_images/car_not_car.jpg
+[image2]: ./output_images/image2_1.jpg
+[image3]: ./output_images/image2_2.jpg
+[image4]: ./output_images/image2_3.jpg
+[image5]: ./output_images/image3_1.jpg
+[image6]: ./output_images/image3_2.jpg
+[image7]: ./output_images/image3_3.jpg
 [image8]: ./output_images/sliding_window_1.JPG
 [image9]: ./output_images/sliding_window_2.JPG
 [image10]: ./output_images/heat_map_1.JPG
@@ -222,4 +222,6 @@ Here's an example result showing the heatmap from a series of frames of video (c
 
 I struggled a lot with the combination of color histograms and histogram of oriented gradients. I think it is good to use a combination of them but for what reason ever it did not work for me. So I used HOG features only.
 I also think that the straightforward heatmap approach could be improved by "projecting" the boxes found in former frames to a "new" position in the new frame. Basically, implementing something like a Kalman filter for the bounding boxes.
+
+Similar, to what we did in the fourth project, I should probably have undistorted the image before searching for cars.
 
